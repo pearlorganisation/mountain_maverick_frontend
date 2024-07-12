@@ -25,14 +25,14 @@ const Banner = () => {
       >
         <SwiperSlide className="relative">
           <img
-            src="banner1.jpg"
+            src="banner2.jpg"
             alt="Mountain Climbing"
-            className="w-full h-[450px] lg:h-full object-cover"
+            className="w-full h-[450px] lg:h-[650px] object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-            <p className="text-sm lg:text-lg mb-1 md:mb-5">Get 50% Off</p>
-            <h3 className="text-4xl lg:text-6xl font-semibold my-5 lg:my-10">
+            <h3 className="text-4xl lg:text-6xl font-semibold  lg:my-0">
               Mountain Maverick
             </h3>
             <p className="tracking-wide lg:tracking-wider leading-5 lg:leading-7 mb-5">
@@ -48,12 +48,12 @@ const Banner = () => {
           <img
             src="banner2.jpg"
             alt="Mountain Climbing"
-            className="w-full h-[450px] lg:h-full object-cover"
+            className="w-full h-[450px] lg:h-[650px] object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-            <p className="text-sm lg:text-lg mb-1 md:mb-5">Get 50% Off</p>
-            <h3 className="text-4xl lg:text-6xl font-semibold my-5 lg:my-10">
+            <h3 className="text-4xl lg:text-6xl font-semibold  lg:my-0">
               Mountain Maverick
             </h3>
             <p className="tracking-wide lg:tracking-wider leading-5 lg:leading-7 mb-5">
