@@ -44,6 +44,7 @@ const Banner = () => {
             </button>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className="relative">
           <img
             src="banner2.jpg"

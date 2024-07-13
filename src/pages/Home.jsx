@@ -1,16 +1,16 @@
 import React from "react";
 import Banner from "../components/Banner/Banner";
 
-import UkcharDhamYatra from "../components/Feature/UkcharDhamYatra/UkcharDhamYatra";
-import AllIndiaCharDhamYatra from "../components/Feature/AllIndiaCharDhamYatra/AllIndiaCharDhamYatra";
 import TrekDeatils from "../components/Feature/TrekDeatils/TrekDeatils";
+import CharDhamYatra from "../components/Feature/CharDhamYatra/CharDhamYatra";
+import PopularTrek from "../components/Feature/PopularTrek/PopularTrek";
 
 const Home = () => {
   return (
     <div>
       <Banner />
-      <AllIndiaCharDhamYatra />
-      <UkcharDhamYatra />
+      <CharDhamYatra />
+      <PopularTrek />
       <TrekDeatils />
     </div>
   );
