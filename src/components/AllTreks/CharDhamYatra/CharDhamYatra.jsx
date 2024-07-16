@@ -4,19 +4,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-const PopularTrek = () => {
+const CharDhamYatra = () => {
   const data = [
     {
-      title: "Ranthan Top",
-      img: "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/9cad38b5-8e7a-4d31-b6ed-348e56622d7b_Ranthan+Kharak_Indiahikes_Nitesh+Kumar_2021_+%288%29.jpg?auto=compress,format&rect=0,0,1600,1067&w=1200&h=800&h=800&w=1200ww.mypuritour.com/wp-content/uploads/2022/08/puri-tour-2022.jpeg",
+      title: "Jagannath Puri",
+      img: "https://www.mypuritour.com/wp-content/uploads/2022/08/puri-tour-2022.jpeg",
       description:
-        "Summer is one of the best times for trekking in the Kumaon region. In this season you can observe different shades of green right throughout the trek.",
+        "The Jagannath Temple is a Hindu temple dedicated to the god Jagannath, a form of Vishnu in Hinduism.",
     },
     {
-      title: "Surya Top",
-      img: "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/128f02d0-248b-4afa-b0bd-1d76fe8abbfb_Surya+Top_Banner+Images_Mayank+Khare-4.jpg?auto=compress,format&rect=0,0,2400,1600&w=1200&h=800&h=800&w=1200",
+      title: "Rameswaram",
+      img: "https://www.justahotels.com/wp-content/uploads/2024/02/Ramanathaswamy-Temple.jpg",
       description:
-        "Summers are warm on Surya Top trek. Picture bright green meadows getting toasted under hot sunlight.",
+        "The shrine is dedicated to Lord Shiva and is one of the twelve jyotirlinga temples in India.",
     },
     {
       title: "Dwarka",
@@ -25,8 +25,8 @@ const PopularTrek = () => {
         "Dwarakadheesh is the 98th Divya Desam of Vishnu on the subcontinent, glorified in the Divya Prabandha sacred texts.",
     },
     {
-      title: "Phulara Ridge",
-      img: "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/80b21c1b-df55-4a8a-9027-84dea02bf689_Phulara-Ridge-Trek-Indiahikes-Dhaval+Jajal-2.jpg?auto=compress,format&rect=0,0,1599,901&w=1200&h=676&h=676&w=1200",
+      title: "Badrinath",
+      img: "badrinath.jpg",
       description:
         "Badrinath, a major pilgrimage center dedicated to Lord Vishnu, is located in the Garhwal hills.",
     },
@@ -34,7 +34,7 @@ const PopularTrek = () => {
       title: "Yamunotri",
       img: "yamunotri.jpg",
       description:
-        "This is a trek hidden in plain sight. It starts from Kotgoan, the same base camp as the popular Kedarkantha. While Kedarkantha sees massive crowds, this trek silently watches on.",
+        "Yamunotri, the source of river Yamuna, is revered by Hindu pilgrims seeking purification.",
     },
     {
       title: "Gangotri",
@@ -52,9 +52,12 @@ const PopularTrek = () => {
 
   return (
     <div className="bg-gray-100">
-      <h1 className="text-center text-xl md:text-3xl font-medium p-5 md:p-10">
-        Popular Trek's
-      </h1>
+      <div className=" border-b-2 border-[#4ADE80] max-w-2xl mx-auto px-5">
+        <h1 className="text-center  text-2xl md:text-3xl font-medium p-5 md:p-10">
+          Char Dham Yatra
+        </h1>
+      </div>
+
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <Swiper
           slidesPerView={1}
@@ -95,6 +98,10 @@ const PopularTrek = () => {
                     {el.description}
                   </p>
                 </div>
+
+                <button type="button" class="text-white bg-[#4ADE80] p-5">
+                  View Details
+                </button>
               </div>
             </SwiperSlide>
           ))}
@@ -104,4 +111,4 @@ const PopularTrek = () => {
   );
 };
 
-export default PopularTrek;
+export default CharDhamYatra;
