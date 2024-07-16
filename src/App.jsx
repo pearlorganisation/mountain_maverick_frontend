@@ -5,6 +5,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Contactus from "./pages/Contactus";
 import TrekDeatils from "./components/AllTreks/TrekDeatils/TrekDeatils";
+import About from "./pages/About";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/trekdetails",
         element: <TrekDeatils />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },
