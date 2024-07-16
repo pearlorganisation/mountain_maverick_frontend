@@ -52,9 +52,11 @@ const PopularTrek = () => {
 
   return (
     <div className="bg-gray-100">
-      <h1 className="text-center text-xl md:text-3xl font-medium p-5 md:p-10">
-        Popular Trek's
-      </h1>
+      <div className=" border-b-2 border-[#4ADE80] max-w-2xl mx-auto px-5">
+        <h1 className="text-center  text-2xl md:text-3xl font-medium p-5 md:p-10">
+          Popular Trek's
+        </h1>
+      </div>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <Swiper
           slidesPerView={1}
@@ -69,15 +71,15 @@ const PopularTrek = () => {
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 30,
+              spaceBetween: 50,
             },
           }}
           modules={[Pagination]}
-          className="mySwiper"
+          className="p-10"
         >
           {data.map((el, id) => (
             <SwiperSlide key={id}>

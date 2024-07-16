@@ -10,7 +10,6 @@ const Home = () => {
       <Banner />
       <CharDhamYatra />
       <PopularTrek />
-      <TrekDeatils />
     </div>
   );
 };

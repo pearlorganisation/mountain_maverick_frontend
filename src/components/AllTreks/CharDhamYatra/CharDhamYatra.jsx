@@ -72,15 +72,15 @@ const CharDhamYatra = () => {
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 30,
+              spaceBetween: 50,
             },
           }}
           modules={[Pagination]}
-          className="mySwiper"
+          className="p-10"
         >
           {data.map((el, id) => (
             <SwiperSlide key={id}>
@@ -99,7 +99,7 @@ const CharDhamYatra = () => {
                   </p>
                 </div>
 
-                <button type="button" class="text-white bg-[#4ADE80] p-5">
+                <button type="button" class="text-white bg-[#4ADE80] p-5 ">
                   View Details
                 </button>
               </div>
