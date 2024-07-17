@@ -59,8 +59,9 @@ const About = () => {
               adventure with Trek Explorer. Whether you're a seasoned trekker or
               a beginner, we have something for everyone.
             </p>
+
             <a
-              href="#"
+              href="/Contact"
               class="inline-block bg-green-500 text-white py-3 px-6 rounded-md shadow-md hover:bg-green-600 transition duration-300"
             >
               Contact Us
