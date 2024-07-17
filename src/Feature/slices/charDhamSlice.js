@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getCharDham } from "../actions/charDham";
+import { getAllCharDham, getCharDham } from "../actions/charDham";
 // import { toast } from "sonner";
 
 const initialState = {
@@ -17,13 +17,13 @@ export const charDhamSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getCharDham.pending, (state) => {
+      .addCase(getAllCharDham.pending, (state) => {
         state.isLoading = true;
         state.isSuccess = false;
         state.errorMessage = "";
 
       })
-      .addCase(getCharDham.fulfilled, (state, action) => {
+      .addCase(getAllCharDham.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.errorMessage = "";
@@ -33,7 +33,7 @@ export const charDhamSlice = createSlice({
         //   position: "top-center"
         // });
       })
-      .addCase(getCharDham.rejected, (state, action) => {
+      .addCase(getAllCharDham.rejected, (state, action) => {
         state.isLoading = false;
         state.isSuccess = false;
         state.errorMessage = action.payload || "Failed to load data !!"; // Use action.payload for error message

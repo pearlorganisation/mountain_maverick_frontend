@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getCharDham } from "../../../Feature/actions/charDham";
+import { getAllCharDham, getCharDham } from "../../../Feature/actions/charDham";
 import { Link } from "react-router-dom";
 
 const CharDhamYatra = () => {
@@ -12,7 +12,7 @@ const CharDhamYatra = () => {
   const { charDhamData, isSuccess } = useSelector((state) => state?.charDham);
 
   useEffect(() => {
-    dispatch(getCharDham());
+    dispatch(getAllCharDham());
   }, []);
 
   console.log(isSuccess, "gfdgfsgfdgsafdg");
