@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-
+import { Element } from "react-scroll";
 const Product = () => {
   const { id } = useParams();
   const { charDhamData } = useSelector((state) => state?.charDham);
@@ -9,7 +9,7 @@ const Product = () => {
   console.log(data);
 
   return (
-    <>
+    <div>
       {data && (
         <div className="p-8 bg-white shadow-md rounded-lg max-w-6xl mx-auto">
           <div className="flex flex-col items-center">
@@ -111,7 +111,7 @@ const Product = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

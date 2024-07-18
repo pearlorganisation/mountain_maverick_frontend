@@ -81,7 +81,7 @@ export function Footer() {
                 <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="/Contact"
                   >
                     Contact Us
                   </a>

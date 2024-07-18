@@ -1,7 +1,7 @@
 "use client";
-
+import { Link as S } from "react-scroll";
 import React from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Scroll, X } from "lucide-react";
 import { GiMountainRoad } from "react-icons/gi";
 const menuItems = [
   {
@@ -32,8 +32,10 @@ export function Header() {
           <span>
             <GiMountainRoad size={40} className="text-green-500" />
           </span>
-          <span className="font-bold">mountain maverick</span>
+
+          <span className="font-bold">Mountain maverick</span>
         </div>
+
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
@@ -48,13 +50,23 @@ export function Header() {
             ))}
           </ul>
         </div>
+
         <div className="hidden lg:block">
-          <button
-            type="button"
-            className="rounded-md bg-green-500  px-3 py-2 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          <S
+            activeClass="active"
+            to="charDham"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
           >
-            Explore
-          </button>
+            <button
+              type="button"
+              className="rounded-md bg-green-500  px-3 py-2 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              Explore
+            </button>
+          </S>
         </div>
         <div className="lg:hidden">
           <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
