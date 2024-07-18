@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getAllCharDham, getCharDham } from "../../../Feature/actions/charDham";
+import { getAllCharDham } from "../../../Feature/actions/charDham";
 import { Link } from "react-router-dom";
 
 const CharDhamYatra = () => {
@@ -48,32 +48,33 @@ const CharDhamYatra = () => {
           modules={[Pagination]}
           className="p-10"
         >
-          {charDhamData.map((el) => (
-            <SwiperSlide key={el._id}>
-              <div className="bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col hover:scale-105 transform transition duration-300">
-                <img
-                  src={el.banner}
-                  alt={el.title}
-                  className="w-full h-48 object-cover object-center"
-                />
-                <div className="p-4 flex-grow flex flex-col">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    {el.title}
-                  </h3>
-                  <p className="text-gray-600 flex-grow overflow-hidden text-ellipsis line-clamp-3">
-                    {el.description}
-                  </p>
-                </div>
+          {Array.isArray(charDhamData) &&
+            charDhamData.map((el) => (
+              <SwiperSlide key={el._id}>
+                <div className="bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col hover:scale-105 transform transition duration-300">
+                  <img
+                    src={el.banner}
+                    alt={el.title}
+                    className="w-full h-48 object-cover object-center"
+                  />
+                  <div className="p-4 flex-grow flex flex-col">
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                      {el.title}
+                    </h3>
+                    <p className="text-gray-600 flex-grow overflow-hidden text-ellipsis line-clamp-3">
+                      {el.description}
+                    </p>
+                  </div>
 
-                <Link
-                  to={`/product/${el._id}`}
-                  className="text-white bg-[#4ADE80] p-5 "
-                >
-                  View Details
-                </Link>
-              </div>
-            </SwiperSlide>
-          ))}
+                  <Link
+                    to={`/product/${el._id}`}
+                    className="text-white bg-[#4ADE80] p-5 "
+                  >
+                    View Details
+                  </Link>
+                </div>
+              </SwiperSlide>
+            ))}
         </Swiper>
       </div>
     </div>

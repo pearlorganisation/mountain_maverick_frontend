@@ -8,7 +8,7 @@ export const getAllCharDham = createAsyncThunk("getAllCharDham",
     try {
     
     const {data} = await instance.get(`/char_dham`, {
-      withCredentials: true,
+      withCredentials: false,
     });
 
     return data?.data;
@@ -24,7 +24,7 @@ export const getCharDham = createAsyncThunk("getCharDham",
     try {
     
     const {data} = await instance.get(`/char_dham/${payload.id}`, {
-      withCredentials: true,
+      withCredentials: false,
     });
 
     return data?.data;
