@@ -15,7 +15,7 @@ const PopularTrek = () => {
     },
     {
       title: "Surya Top",
-      img: "https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/128f02d0-248b-4afa-b0bd-1d76fe8abbfb_Surya+Top_Banner+Images_Mayank+Khare-4.jpg?auto=compress,format&rect=0,0,2400,1600&w=1200&h=800&h=800&w=1200",
+      img: "https://live.staticflickr.com/7646/16888287766_371274bff4_b.jpg",
       description:
         "Summers are warm on Surya Top trek. Picture bright green meadows getting toasted under hot sunlight.",
     },
