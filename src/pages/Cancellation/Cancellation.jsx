@@ -3,16 +3,19 @@ import React from "react";
 const Cancellation = () => {
   return (
     <>
-      <div class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
-        <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full">
-          <h1 class="text-2xl font-bold text-center mb-6">
+      <div className="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+        <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full">
+          <h1 className="text-2xl font-bold text-center mb-6">
             CANCELLATION POLICY
           </h1>
-          <div class="text-gray-800 space-y-4">
+          <div className="text-gray-800 space-y-4">
             <div>
               <strong>How to Cancel:</strong> To cancel your booking, please
               email us at{" "}
-              <a href="mailto:info@mountainmavericks.in" class="text-blue-500">
+              <a
+                href="mailto:info@mountainmavericks.in"
+                className="text-blue-500"
+              >
                 info@mountainmavericks.in
               </a>
               .

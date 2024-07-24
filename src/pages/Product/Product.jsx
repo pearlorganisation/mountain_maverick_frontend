@@ -82,7 +82,7 @@ const Product = () => {
             </div>
             <div className="md:w-1/2">
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://www.sacredyatra.com/wp-content/uploads/2016/01/Panch-Kedar-Yatra.jpg"
                 alt="Panch Kedar"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -109,7 +109,7 @@ const Product = () => {
                 <strong>Trekking Level:</strong> Moderate to challenging
               </p>
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/56/Kedarnath_Temple_in_Rainy_season.jpg"
                 alt="Kedarnath Temple"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -126,7 +126,7 @@ const Product = () => {
                 surroundings. Involves a Moderate to challenging trek.
               </p>
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://gmvnonline.com/uploads/images/destinations/Rudraprayag/Madhamaheshwar/budha-madhyamaheshwar.jpg"
                 alt="Madhyamaheshwar Temple"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -141,7 +141,7 @@ const Product = () => {
                 the world. Accessible via a short trek from Chopta.
               </p>
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://nextjs.shrineyatra.in/wp-content/uploads/2022/12/Tungnath-Temple.jpg"
                 alt="Tungnath Temple"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -160,7 +160,7 @@ const Product = () => {
                 <strong>Trekking Level:</strong> Moderate to challenging
               </p>
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://www.bontravelindia.com/wp-content/uploads/2022/02/Shri-Rudranath-Temple.jpg"
                 alt="Rudranath Temple"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -176,7 +176,7 @@ const Product = () => {
                 others.
               </p>
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://www.euttaranchal.com/tourism/photos/rudranath-3584027.jpg"
                 alt="Kalpeshwar Temple"
                 className="w-full rounded-lg shadow-lg"
               />
