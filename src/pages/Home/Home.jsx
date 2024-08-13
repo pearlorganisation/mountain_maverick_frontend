@@ -1,20 +1,22 @@
-import { Element } from "react-scroll";
 import Banner from "../../components/Banner/Banner";
-import UkcharDhamYatra from "../../components/Feature/UkcharDhamYatra/UkcharDhamYatra";
+import CharDhamYatra from "../../components/AllTreks/CharDhamYatra/CharDhamYatra";
+import PopularTrek from "../../components/AllTreks/PopularTrek/PopularTrek";
+import { Element } from "react-scroll";
+import Tour from "../../components/AllTreks/Tours/Tour";
+
 const Home = () => {
   return (
     <div>
       <Banner />
+      <Element name="charDham" className="element">
+        <CharDhamYatra />
+      </Element>
 
-      <div className="container mx-auto">
-        <h1 className="text-center text-green-500 font-bold text-5xl py-6">
-          MOST POPULAR UTTARAKHAND DESTINATIONS
-        </h1>
-          <Element name="trek1" className="element">
+      <Element name="trek" className="element">
+        <PopularTrek />
+      </Element>
 
-          <UkcharDhamYatra />
-          <Element/>
-      </div>
+      <Tour />
     </div>
   );
 };
