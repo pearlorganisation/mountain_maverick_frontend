@@ -15,7 +15,6 @@ const CharDhamYatra = () => {
     dispatch(getAllCharDham());
   }, []);
 
-  console.log(isSuccess, "gfdgfsgfdgsafdg");
   return (
     <div className="bg-gray-100">
       <div className=" border-b-2 border-[#4ADE80] max-w-2xl mx-auto px-5">

@@ -54,7 +54,7 @@ const PopularTrek = () => {
     <div className="bg-gray-100">
       <div className=" border-b-2 border-[#4ADE80] max-w-2xl mx-auto px-5">
         <h1 className="text-center  text-2xl md:text-3xl font-medium p-5 md:p-10">
-          Popular Trek&nbsp;s
+          Popular Trek's
         </h1>
       </div>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">

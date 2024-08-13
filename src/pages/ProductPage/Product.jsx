@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { Element } from "react-scroll";
 const Product = () => {
   const { id } = useParams();
   const { charDhamData } = useSelector((state) => state?.charDham);
