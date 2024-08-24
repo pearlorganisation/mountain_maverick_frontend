@@ -7,6 +7,7 @@ import TrekDeatils from "./components/AllTreks/TrekDeatils/TrekDeatils";
 import Product from "./pages/ProductPage/Product";
 import TourProduct from "./pages/ProductPage/TourProduct";
 import Error from "./pages/ErrorBoundary/Error";
+import About from "./pages/About/About";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
       {
         path: "/trekdetails",
