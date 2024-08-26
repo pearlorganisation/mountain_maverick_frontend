@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 async function getData() {
   try {
     const res = await fetch(
-      "https://mountain-maverick-backend.onrender.com/api/v1/tour"
+      `${import.meta.env.VITE_REACT_APP_API_BASE_URL_PRODUCTION}/tours`
     );
     return await res.json();
   } catch (err) {

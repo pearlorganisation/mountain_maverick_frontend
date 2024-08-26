@@ -16,7 +16,7 @@ const Home = () => {
         <PopularTrek />
       </Element>
 
-      <Tour />
+      {/* <Tour /> */}
     </div>
   );
 };

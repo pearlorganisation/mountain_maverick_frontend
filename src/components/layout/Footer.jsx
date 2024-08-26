@@ -26,7 +26,7 @@ export function Footer() {
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
-                Feature
+                Company
               </h3>
               <ul>
                 <li className="mb-4">
@@ -34,7 +34,7 @@ export function Footer() {
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     href="#"
                   >
-                    Trek
+                    About
                   </a>
                 </li>
                 <li className="mb-4">
@@ -42,21 +42,14 @@ export function Footer() {
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
                     href="#"
                   >
-                    Char Dham
+                    Contact
                   </a>
                 </li>
-                <li className="mb-4">
-                  <a
-                    className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
-                  >
-                    Pricing
-                  </a>
-                </li>
+
               </ul>
             </div>
           </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-2/12">
+          {/* <div className="w-full p-6 md:w-1/2 lg:w-2/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
                 Support
@@ -113,7 +106,7 @@ export function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
