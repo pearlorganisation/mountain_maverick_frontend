@@ -1,5 +1,6 @@
 import React from "react";
 import { GiMountainRoad } from "react-icons/gi";
+import { Link } from "react-router-dom";
 export function Footer() {
   return (
     <section className="relative overflow-hidden py-10">
@@ -30,20 +31,20 @@ export function Footer() {
               </h3>
               <ul>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="/about"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a
+                  <Link
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    to="/contact"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
 
               </ul>
